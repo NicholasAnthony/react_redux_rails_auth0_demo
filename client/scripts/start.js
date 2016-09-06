@@ -1,4 +1,7 @@
+console.log(" 🔔 <start.js> STARTJS:");
 process.env.NODE_ENV = 'development';
+process.env.AUTH0_CLIENT_ID='vJoU6o2nTMZ87Mp6FgPPNG9QUbh65BPX';
+process.env.AUTH0_DOMAIN='treflabs.auth0.com';
 
 var path = require('path');
 var chalk = require('chalk');
@@ -12,6 +15,14 @@ var detect = require('detect-port');
 var prompt = require('./utils/prompt');
 var config = require('../config/webpack.config.dev');
 var paths = require('../config/paths');
+// require('dotenv').config();
+// require('dotenv').config({path: '/Users/NickBrick/Sites/repos/react_redux_rails_auth0_demo/client'});
+console.log(" 🔔 <start.js> STARTJS 2:");
+
+if (!process.env.AUTH0_CLIENT_ID || !process.env.AUTH0_DOMAIN){
+  throw 'Make sure you have AUTH0_CLIENT_ID and AUTH0_SECRET in your .env file'
+}
+
 
 // Tools like Cloud9 rely on this.
 var DEFAULT_PORT = process.env.PORT || 3000;

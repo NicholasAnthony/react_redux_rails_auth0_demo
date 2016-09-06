@@ -1,3 +1,4 @@
+console.log(" 🔔 <webpack.config.dev.js>:");
 var path = require('path');
 var autoprefixer = require('autoprefixer');
 var webpack = require('webpack');
@@ -6,6 +7,9 @@ var CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
 var WatchMissingNodeModulesPlugin = require('../scripts/utils/WatchMissingNodeModulesPlugin');
 var paths = require('./paths');
 var env = require('./env');
+// var dotenv = require('dotenv');
+
+
 
 // This is the development configuration.
 // It is focused on developer experience and fast rebuilds.
@@ -15,7 +19,8 @@ module.exports = {
   // We don't use source maps here because they can be confusing:
   // https://github.com/facebookincubator/create-react-app/issues/343#issuecomment-237241875
   // You may want 'cheap-module-source-map' instead if you prefer source maps.
-  devtool: 'eval',
+  // devtool: 'eval',
+  devtool: 'source-map',
   // These are the "entry points" to our application.
   // This means they will be the "root" imports that are included in JS bundle.
   // The first two entry points enable "hot" CSS and auto-refreshes for JS.
@@ -38,7 +43,7 @@ module.exports = {
     // We ship a few polyfills by default.
     require.resolve('./polyfills'),
     // Finally, this is your app's code:
-    path.join(paths.appSrc, 'index')
+    path.join(paths.appSrc, 'App')
     // We include the app code last so that if there is a runtime error during
     // initialization, it doesn't blow up the WebpackDevServer client, and
     // changing JS code would still trigger a refresh.
@@ -191,3 +196,4 @@ module.exports = {
     new WatchMissingNodeModulesPlugin(paths.appNodeModules)
   ]
 };
+console.log(" 🔔 <webpack.config.dev.js> END:");
