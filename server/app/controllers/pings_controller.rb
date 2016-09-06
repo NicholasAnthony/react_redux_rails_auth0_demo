@@ -1,5 +1,15 @@
 class PingsController < ApplicationController
+  before_action :authenticate_user, only: [:private]
+
   before_action :set_ping, only: [:show, :update, :destroy]
+
+  def public
+    render json: {message: "Hello from a PUBLIC endpoint!" }
+  end
+
+  def private
+    render json: {message: "Hello from a PRIVATE endpoint!" }
+  end
 
   # GET /pings
   def index
@@ -48,4 +58,9 @@ class PingsController < ApplicationController
     def ping_params
       params.require(:ping).permit(:title)
     end
+
+    # If you want to override the knock method
+    # def authenticate_user
+    #   return User.first
+    # end
 end
