@@ -6,9 +6,13 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 var CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
 var WatchMissingNodeModulesPlugin = require('../scripts/utils/WatchMissingNodeModulesPlugin');
 var paths = require('./paths');
+var dotenv = require('dotenv').config();
 var env = require('./env');
-// var dotenv = require('dotenv');
 
+
+if (!process.env.REACT_APP_AUTH0_CLIENT_ID || !process.env.REACT_APP_AUTH0_DOMAIN){
+  throw 'Make sure you have AUTH0_CLIENT_ID and AUTH0_SECRET in your .env file'
+}
 
 
 // This is the development configuration.

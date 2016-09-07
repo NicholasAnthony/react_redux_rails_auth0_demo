@@ -1,7 +1,7 @@
 import React, { PropTypes as T } from 'react'
 import {ButtonToolbar, Button} from 'react-bootstrap'
-import Messages from '../../../components/Messages/Messages'
-import AuthService from '../../../utils/AuthService'
+import Messages from '../../components/Messages/Messages'
+import AuthService from '../../utils/AuthService'
 import styles from './styles.module.css'
 
 export class Login extends React.Component {

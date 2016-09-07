@@ -1,22 +1,47 @@
+// import 'babel-polyfill'
 import React from 'react'
-import ReactDOM from 'react-dom'
+import { render } from 'react-dom'
+import { browserHistory } from 'react-router'
+import { syncHistoryWithStore } from 'react-router-redux'
+import Root from './containers/Root/Root'
+import configureStore from './store/configureStore'
 
-// import 'bootstrap/dist/css/bootstrap.css'
-// require('react-bootstrap')
-import './App.css'
+const store = configureStore()
+const history = syncHistoryWithStore(browserHistory, store)
 
-import App from './containers/App/App'
+render(
+  <Root store={store} history={history} />,
+  document.getElementById('root')
+)
 
-import {hashHistory} from 'react-router'
-import makeRoutes from './routes'
 
-const routes = makeRoutes()
+// import React from 'react'
+// import ReactDOM from 'react-dom'
 
-const mountNode = document.querySelector('#root');
-ReactDOM.render(
-  <App history={hashHistory}
-        routes={routes} />,
-mountNode);
+// // import 'bootstrap/dist/css/bootstrap.css'
+// // require('react-bootstrap')
+// require('bootstrap/dist/css/bootstrap.css');
+
+// import './App.css'
+
+// import App from './containers/App/App'
+
+// import {hashHistory} from 'react-router'
+// import makeRoutes from './routes'
+
+// const routes = makeRoutes()
+
+// const mountNode = document.querySelector('#root');
+// ReactDOM.render(
+//   <App history={hashHistory}
+//         routes={routes} />,
+// mountNode);
+
+
+
+
+
+
 
 
 // import React, { Component } from 'react';

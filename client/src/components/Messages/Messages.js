@@ -30,14 +30,17 @@ export class Messages extends React.Component {
 
   render(){
     return (
-      <ListGroup className={styles.root}>
-        <ListGroupItem header="/api/public response">
-          {this.state.publicMsg}
-        </ListGroupItem>
-        <ListGroupItem header="/api/private response">
-          {this.state.privateMsg}
-        </ListGroupItem>
-      </ListGroup>
+      <div>
+        <h3>Messages</h3>
+        <ListGroup className={styles.root}>
+          <ListGroupItem header="/api/public response">
+            <i>{this.state.publicMsg}</i>
+          </ListGroupItem>
+          <ListGroupItem header="/api/private response">
+            <i>{this.state.privateMsg}</i>
+          </ListGroupItem>
+        </ListGroup>
+      </div>
     )
   }
 }

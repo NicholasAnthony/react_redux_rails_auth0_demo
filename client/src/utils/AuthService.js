@@ -57,6 +57,21 @@ export default class AuthService extends EventEmitter {
     return profile ? JSON.parse(localStorage.profile) : {}
   }
 
+  updateProfile(userId, data){
+    const headers = {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json',
+      'Authorization': 'Bearer ' + this.getToken()
+    }
+    return fetch(`https://${this.domain}/api/v2/users/${userId}`, {
+      method: 'PATCH',
+      headers: headers,
+      body: JSON.stringify(data)
+    })
+    .then(response => response.json())
+    .then(newProfile => this.setProfile(newProfile))
+  }
+  
   setToken(idToken){
     // Saves user token to localStorage
     localStorage.setItem('id_token', idToken)

@@ -1,7 +1,9 @@
 import React, { PropTypes as T } from 'react'
 import {Button} from 'react-bootstrap'
-import Messages from '../../../components/Messages/Messages'
-import AuthService from '../../../utils/AuthService'
+import AuthService from '../../utils/AuthService'
+import Messages from '../../components/Messages/Messages'
+import ProfileDetails from '../../components/Profile/ProfileDetails'
+import ProfileEdit from '../../components/Profile/ProfileEdit'
 import styles from './styles.module.css'
 
 export class Home extends React.Component {
@@ -35,6 +37,8 @@ export class Home extends React.Component {
         <h2>Home</h2>
         <p>Welcome {profile.name}!</p>
         <Messages auth={this.props.auth}></Messages>
+        <ProfileDetails profile={profile}></ProfileDetails>
+        <ProfileEdit profile={profile} auth={this.props.auth}></ProfileEdit>
         <Button onClick={this.logout.bind(this)}>Logout</Button>
       </div>
     )
