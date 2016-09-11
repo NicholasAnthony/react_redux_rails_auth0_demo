@@ -5,20 +5,19 @@ import DevTools from '../../utils/DevTools'
 import { Router } from 'react-router'
 
 export default class Root extends Component {
+  static propTypes = {
+    store: PropTypes.object.isRequired,
+    history: PropTypes.object.isRequired
+  }
   render() {
     const { store, history } = this.props
     return (
       <Provider store={store}>
-        <div>
+        <div className="container">
           <Router history={history} routes={routes} />
-          <DevTools />
+          {/*<DevTools />*/}
         </div>
       </Provider>
     )
   }
-}
-
-Root.propTypes = {
-  store: PropTypes.object.isRequired,
-  history: PropTypes.object.isRequired
 }

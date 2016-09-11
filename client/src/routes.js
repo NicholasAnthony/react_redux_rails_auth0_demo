@@ -7,12 +7,7 @@ import Home from './components/Home/Home'
 import Login from './components/Login/Login'
 
 
-// const auth = new AuthService(__AUTH0_CLIENT_ID__, __AUTH0_DOMAIN__);
-
-const client_id =  process.env.REACT_APP_AUTH0_CLIENT_ID
-const domain = process.env.REACT_APP_AUTH0_DOMAIN;
-
-const auth = new AuthService(client_id, domain);
+const auth = new AuthService(process.env.REACT_APP_AUTH0_DOMAIN, process.env.REACT_APP_AUTH0_CLIENT_ID)
 
 // onEnter callback to validate authentication in private routes
 const requireAuth = (nextState, replace) => {

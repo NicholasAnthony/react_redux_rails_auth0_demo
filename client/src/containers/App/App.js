@@ -61,12 +61,14 @@ class App extends Component {
             />
           </div>
         </div>
-
+  
+        {/*
         <Jumbotron>
           <h2 className={styles.mainTitle}>
             <img src="https://cdn.auth0.com/styleguide/1.0.0/img/badge.svg" role="presentation" />
           </h2>
         </Jumbotron>
+        */}
 
         <div className="container-fluid">
           <JedisList
