@@ -1,6 +1,7 @@
 import * as ActionTypes from '../actions'
 import { routerReducer as routing } from 'react-router-redux'
 import { combineReducers } from 'redux'
+import {event, events } from './eventReducer'
 const jwtDecode = require('jwt-decode')
 
 function checkTokenExpiry() {
@@ -107,7 +108,9 @@ const rootReducer = combineReducers({
   routing,
   auth,
   jedis,
-  jedi
+  jedi,
+  event,
+  events
 })
 
 export default rootReducer
