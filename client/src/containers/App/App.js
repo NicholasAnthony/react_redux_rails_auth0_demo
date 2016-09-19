@@ -14,14 +14,6 @@ class App extends Component {
   static contextTypes = {
     router: T.object
   }
-
-  constructor(props) {
-    super(props)
-    this.handleGetJedisClick = this.handleGetJedisClick.bind(this)
-    this.handleGetJediClick = this.handleGetJediClick.bind(this)
-    this.handleLoginClick = this.handleLoginClick.bind(this)
-    this.handleLogoutClick = this.handleLogoutClick.bind(this)
-  }
   
   componentDidMount() {
     this.props.loadEvents()
@@ -32,19 +24,19 @@ class App extends Component {
     // if( this.props.events.isFetching === true ){}
   }
 
-  handleGetJedisClick() {
+  handleGetJedisClick = () => {
     this.props.loadJedis()
   }
   
-  handleGetJediClick(id) {
+  handleGetJediClick = (id) => {
     this.props.loadJedi(id)
   }
   
-  handleLoginClick() {
+  handleLoginClick = () => {
     this.props.login()
   }
   
-  handleLogoutClick() {
+  handleLogoutClick = () => {
     this.props.logout()
   }
 
@@ -71,21 +63,22 @@ class App extends Component {
     return (
 
       <div>
-        <div className="navbar navbar-default">
-          <div className="container-fluid">
-            <a className="navbar-brand">
-              <img src={LogoImg} role="presentation" width="120" />
-            </a>
-            <Auth 
-              isAuthenticated={isAuthenticated}
-              profile={profile}
-              onLoginClick={this.handleLoginClick}
-              onLogoutClick={this.handleLogoutClick}
-            />
+
+        <header>
+          <div className="header">
+            <img src={LogoImg} role="presentation" width="200" />
           </div>
+        </header>
+    
+        <div>
+          <Auth 
+            isAuthenticated={isAuthenticated}
+            profile={profile}
+            onLoginClick={this.handleLoginClick}
+            onLogoutClick={this.handleLogoutClick}
+          />
         </div>
-  
-        
+          
         {/*
         <Jumbotron>
           <h2 className={styles.mainTitle}>
@@ -116,8 +109,6 @@ class App extends Component {
             />
             <Jedi jedi={singleJedi} />
           */}
-
-          
 
         </div>
 
