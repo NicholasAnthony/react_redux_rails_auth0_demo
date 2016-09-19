@@ -7,7 +7,9 @@ import Home from './components/Home/Home'
 import Login from './components/Login/Login'
 
 
-const auth = new AuthService(process.env.REACT_APP_AUTH0_DOMAIN, process.env.REACT_APP_AUTH0_CLIENT_ID)
+const auth = new AuthService(
+  process.env.REACT_APP_AUTH0_CLIENT_ID, 
+  process.env.REACT_APP_AUTH0_DOMAIN)
 
 // onEnter callback to validate authentication in private routes
 const requireAuth = (nextState, replace) => {
@@ -16,11 +18,18 @@ const requireAuth = (nextState, replace) => {
   }
 }
 
+const authRedirect = (nextState, replace) => {
+  if (auth.loggedIn()) {
+    replace({ pathname: '/home' })
+  }
+}
+
+
 export default (
-  <Route path="/" component={App} auth={auth}>
+  <Route path="/" component={App} >
     <IndexRedirect to="/home" />
     <Route path="home" component={Home} onEnter={requireAuth} />
-    <Route path="login" component={Login} />
+    <Route path="login" component={Login} onEnter={authRedirect} />
     <Route path="access_token=:token" component={Login} /> //to prevent router errors
   </Route>
 )

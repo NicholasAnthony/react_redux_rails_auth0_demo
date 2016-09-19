@@ -60,14 +60,14 @@ export class Login extends Component {
   }
 
   render() {
-    const { auth } = this.props
+    const { auth, dispatch } = this.props
     return (
       <div className={styles.root}>
         <h2>Login</h2>
         <ReactGeoLocation>Example</ReactGeoLocation>
         {/*<Messages auth={this.props.auth}></Messages>*/}
         <ButtonToolbar className={styles.toolbar}>
-          <Button bsStyle="primary" onClick={auth.login.bind(this)}>Login</Button>
+          <Button bsStyle="primary" onClick={auth.login.bind(this, dispatch)}>Login</Button>
         </ButtonToolbar>
       </div>
     )

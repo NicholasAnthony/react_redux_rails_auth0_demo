@@ -1,12 +1,41 @@
 import { EventEmitter } from 'events'
 import { isTokenExpired } from './jwtHelper'
 import Auth0Lock from 'auth0-lock'
+// import { connect } from 'react-redux'
+
+export const LOGIN_SUCCESS = 'LOGIN_SUCCESS'
+export const LOGIN_ERROR = 'LOGIN_ERROR'
+
+
+function loginSuccess(profile) {
+  // debugger
+  return {
+    type: LOGIN_SUCCESS,
+    profile
+  }
+}
+
+function loginError(error) {
+  return {
+    type: LOGIN_ERROR,
+    error
+  }
+}
 
 export default class AuthService extends EventEmitter {
-  constructor(clientId, domain) {
+  constructor(clientId, domain, app = null ) {
     super()
+
+    // debugger
     // Configure Auth0
     this.lock = new Auth0Lock(clientId, domain, {})
+    debugger
+    if (app) {
+      debugger
+      this.dispatch = app.props.dispatch  
+    }
+    
+
     // Add callback for lock `authenticated` event
     this.lock.on('authenticated', this._doAuthentication.bind(this))
     // Add callback for lock `authorization_error` event
@@ -16,6 +45,7 @@ export default class AuthService extends EventEmitter {
   }
 
   _doAuthentication(authResult){
+    // debugger
     // Saves the user token
     this.setToken(authResult.idToken)
     // Async loads the user profile data
@@ -24,6 +54,7 @@ export default class AuthService extends EventEmitter {
         console.log('Error loading the Profile', error)
       } else {
         this.setProfile(profile)
+        return this.dispatch(loginSuccess(profile))
       }
     })
   }
@@ -35,16 +66,22 @@ export default class AuthService extends EventEmitter {
 
   login() {
     // Call the show method to display the widget.
-    this.lock.show()
+    // debugger
+    // return dispatch => {
+      this.lock.show()
+    // }
+    
   }
 
   loggedIn(){
+    // debugger
     // Checks if there is a saved token and it's still valid
     const token = this.getToken()
     return !!token && !isTokenExpired(token)
   }
 
   setProfile(profile){
+    // debugger
     // Saves profile data to localStorage
     localStorage.setItem('profile', JSON.stringify(profile))
     // Triggers profile_updated event to update the UI
@@ -52,6 +89,7 @@ export default class AuthService extends EventEmitter {
   }
 
   getProfile(){
+    // debugger
     // Retrieves the profile data from localStorage
     const profile = localStorage.getItem('profile')
     return profile ? JSON.parse(localStorage.profile) : {}

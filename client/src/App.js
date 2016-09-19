@@ -16,6 +16,9 @@ import 'fullcalendar/dist/fullcalendar.min.js'
 const store = configureStore()
 const history = syncHistoryWithStore(browserHistory, store)
 
+
+history.listen( location => console.log(" 🚀 LOG LOCATION", location))
+
 render(
   <Root store={store} history={history} />,
   document.getElementById('root')
