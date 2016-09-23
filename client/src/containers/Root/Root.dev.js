@@ -3,6 +3,7 @@ import { Provider } from 'react-redux'
 import routes from '../../routes'
 import DevTools from '../../utils/DevTools'
 import { Router } from 'react-router'
+import { Grid } from 'react-bootstrap'
 import styles from './styles.module.css'
 
 export default class Root extends Component {
@@ -14,11 +15,11 @@ export default class Root extends Component {
     const { store, history } = this.props
     return (
       <Provider store={store}>
-        <div className="container" style={{fontFamily: "Open Sans"}}> 
+        <Grid style={{fontFamily: "Open Sans"}}>
           <Router history={history} routes={routes} />
           {/*<DevTools />*/}
           {!window.devToolsExtension ? <DevTools /> : null}
-        </div>
+        </Grid>
       </Provider>
     )
   }

@@ -1,19 +1,23 @@
-import React, {Component, PropTypes} from 'react'
+import React, {Component, PropTypes as PT} from 'react'
 import {Link} from 'react-router'
 import {Navbar, Nav, NavItem, NavDropdown, MenuItem} from 'react-bootstrap'
 import styles from './styles.module.css'
 import LogoImg from '../../assets/images/eventvs-logo.png';
 
 export default class extends Component {
-  // state = {
-  // }
-  // componentWillReceiveProps(nextProps) {
-  // }
-  // handleSubmit = (e) => {
-  // }
-  // handleInputChange = (e) => {
-  // }
+  constructor(props) {
+    super(props)
+  }
+
+  static PropTypes = {
+    isAuthenticated: PT.bool,
+    onLoginClick: PT.func,
+    onLogoutClick: PT.func
+  }
+
   render() {
+    const { onLoginClick, onLogoutClick, isAuthenticated, profile } = this.props
+    const imgStyle = {position: "absolute", marginLeft: "-30px", marginTop: "-10px"}
     return (
       <Navbar fixedTop>
         <Navbar.Header>
@@ -36,10 +40,30 @@ export default class extends Component {
               <MenuItem eventKey={3.3}>Separated link</MenuItem>
             </NavDropdown>
           </Nav>
-          <Nav pullRight>
-            <NavItem eventKey={1} href="#">Link Right</NavItem>
-            <NavItem eventKey={2} href="#">Link Right</NavItem>
-          </Nav>
+          { !isAuthenticated ? (
+            <Nav pullRight>
+              <NavItem eventKey={1} onClick={onLoginClick} href="#">
+                Login
+              </NavItem>
+            </Nav>
+            ) : (
+            <Nav pullRight>
+              <NavItem eventKey={2}>
+                <img src={profile.picture} 
+                  height="40px" 
+                  role="presentation" 
+                  style={imgStyle} />
+              </NavItem>
+              
+              <NavItem eventKey={3}>
+                <span>Welcome, {profile.nickname}</span>
+              </NavItem>
+
+              <NavItem eventKey={4} onClick={onLogoutClick}>
+                Logout
+              </NavItem>
+            </Nav>
+          )}
         </Navbar.Collapse>
       </Navbar>
     )

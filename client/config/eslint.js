@@ -124,7 +124,7 @@ module.exports = {
     'no-use-before-define': ['warn', 'nofunc'],
     'no-useless-computed-key': 'warn',
     'no-useless-concat': 'warn',
-    'no-useless-constructor': 'warn',
+    // 'no-useless-constructor': 'warn',
     'no-useless-escape': 'warn',
     'no-useless-rename': ['warn', {
       ignoreDestructuring: false,

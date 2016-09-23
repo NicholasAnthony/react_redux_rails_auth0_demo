@@ -34,12 +34,12 @@ function callApi(endpoint, authenticatedRequest) {
 
 }
 
-export const CALL_API = Symbol('Call API')
+export const CALL_EVENTS_API = Symbol('Call Events API')
 
 // this gets called first
 export default store => next => action => {
   
-  const callAPI = action[CALL_API]
+  const callAPI = action[CALL_EVENTS_API]
   
   if (typeof callAPI === 'undefined') {
     return next(action)
@@ -61,7 +61,7 @@ export default store => next => action => {
 
   function actionWith(data) {
     const finalAction = Object.assign({}, action, data)
-    delete finalAction[CALL_API]
+    delete finalAction[CALL_EVENTS_API]
     return finalAction
   }
 

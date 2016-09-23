@@ -24,26 +24,24 @@ export class ProfileEdit extends Component {
     const { profile } = this.props
     const { address } = profile.user_metadata || {}
     return (
-      <Row className={s.root}>
-        <Col md={4} mdOffset={6}>
-          <h3>Editing Profile</h3>
-          <Form horizontal onSubmit={this.handleSubmit.bind(this)}>
-            <FormGroup controlId="address">
-              <Col componentClass={ControlLabel} sm={2}>
-                Address
-              </Col>
-              <Col sm={10}>
-                <FormControl type="text" defaultValue={address} ref="address" />
-              </Col>
-            </FormGroup>
-            <FormGroup>
-              <Col smOffset={2} sm={10}>
-                <Button type="submit">Save</Button>
-              </Col>
-            </FormGroup>
-          </Form>
-        </Col>
-      </Row>
+      <div>
+        <h3>Editing Profile</h3>
+        <Form horizontal onSubmit={this.handleSubmit.bind(this)}>
+          <FormGroup controlId="address">
+            <Col componentClass={ControlLabel} sm={2}>
+              Address
+            </Col>
+            <Col sm={10}>
+              <FormControl type="text" defaultValue={address} ref="address" />
+            </Col>
+          </FormGroup>
+          <FormGroup>
+            <Col smOffset={2} sm={10}>
+              <Button type="submit">Save</Button>
+            </Col>
+          </FormGroup>
+        </Form>
+      </div>
     )
   }
 }

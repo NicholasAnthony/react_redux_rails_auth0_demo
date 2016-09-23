@@ -10,7 +10,6 @@ function checkTokenExpiry() {
     let jwtExp = jwtDecode(jwt).exp;
     let expiryDate = new Date(0);
     expiryDate.setUTCSeconds(jwtExp);
-    
     if(new Date() < expiryDate) {
       return true;
     }
@@ -55,7 +54,6 @@ function auth(state = {
 //   allJedis: [],
 //   error: ''
 // }, action) {
-//   debugger
 //   switch (action.type) {
 //     case ActionTypes.JEDIS_REQUEST:
 //       return Object.assign({}, state, {
