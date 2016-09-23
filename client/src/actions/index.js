@@ -54,14 +54,12 @@ export function login() {
 export const LOGOUT_SUCCESS = 'LOGOUT_SUCCESS'
 
 function logoutSuccess(profile) {
-  debugger
   return {
     type: LOGOUT_SUCCESS
   }
 }
 
 export function logout() {
-  debugger
   return dispatch => {
     localStorage.removeItem('id_token');
     localStorage.removeItem('profile');

@@ -1,7 +1,7 @@
 import React, { Component, PropTypes as T } from 'react'
 import {ButtonToolbar, Button} from 'react-bootstrap'
 import Messages from '../../components/Messages/Messages'
-import AuthService from '../../utils/AuthService'
+import AuthService, {loginSuccess, loginError} from '../../utils/AuthService'
 // var ReactGeoLocation = require('react-geo-location');
 import styles from './styles.module.css'
 
@@ -40,10 +40,28 @@ export class ReactGeoLocation extends Component {
 
 
 export class Login extends Component {
+  constructor(props, context) {
+    super(props, context)
+    // this.state = {
+    //   profile: props.auth.getProfile()
+    // }
+    // props.auth.on('profile_updated', (newProfile) => {
+    //   this.setState({profile: newProfile})
+    // })
+    // debugger
+    props.auth.on('authorization_complete', (newProfile) => {
+      alert("PROFILE: ", newProfile)
+      console.log("  😎  PROFILE: ", newProfile)
+      props.dispatch(loginSuccess(newProfile))
+      this.context.router.push('/home');
+      // this.setState({profile: newProfile})
+    })
+  }
 
   state = {
     events: []
   }
+
   static contextTypes = {
     router: T.object
   }
@@ -53,22 +71,21 @@ export class Login extends Component {
     auth: T.instanceOf(AuthService)
   }
 
-  componentDidMount(){
-  }
-
-  componentDidUpdate(prevProps, prevState) { 
-  }
+  // componentDidMount(){}
+  // componentDidUpdate(prevProps, prevState) {}
 
   render() {
     const { auth, dispatch } = this.props
+    console.log(" 🔔 src/components/Login/Login.js RENDER", this.props)
     return (
       <div className={styles.root}>
         <h2>Login</h2>
         <ReactGeoLocation>Example</ReactGeoLocation>
         {/*<Messages auth={this.props.auth}></Messages>*/}
         <ButtonToolbar className={styles.toolbar}>
-          <Button bsStyle="primary" onClick={auth.login.bind(this, dispatch)}>Login</Button>
+          <Button bsStyle="primary" onClick={auth.login.bind(this)}>Login</Button>
         </ButtonToolbar>
+        
       </div>
     )
   }

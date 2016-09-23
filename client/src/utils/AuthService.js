@@ -5,9 +5,9 @@ import Auth0Lock from 'auth0-lock'
 
 export const LOGIN_SUCCESS = 'LOGIN_SUCCESS'
 export const LOGIN_ERROR = 'LOGIN_ERROR'
+export const LOGOUT_SUCCESS = 'LOGOUT_SUCCESS'
 
-
-function loginSuccess(profile) {
+export function loginSuccess(profile) {
   // debugger
   return {
     type: LOGIN_SUCCESS,
@@ -15,10 +15,16 @@ function loginSuccess(profile) {
   }
 }
 
-function loginError(error) {
+export function loginError(error) {
   return {
     type: LOGIN_ERROR,
     error
+  }
+}
+
+export function logoutSuccess(profile) {
+  return {
+    type: LOGOUT_SUCCESS
   }
 }
 
@@ -28,12 +34,20 @@ export default class AuthService extends EventEmitter {
 
     // debugger
     // Configure Auth0
-    this.lock = new Auth0Lock(clientId, domain, {})
-    debugger
-    if (app) {
-      debugger
-      this.dispatch = app.props.dispatch  
+    const authOptions = {
+      auth: {
+        // redirect: false
+        redirect: true,
+        redirectUrl: 'http://localhost:3000/login',
+        responseType: 'token'
+        // sso: true
+      }
     }
+    this.lock = new Auth0Lock(clientId, domain, authOptions)
+
+    // if (app) {
+    //   this.dispatch = app.props.dispatch  
+    // }
     
 
     // Add callback for lock `authenticated` event
@@ -54,7 +68,10 @@ export default class AuthService extends EventEmitter {
         console.log('Error loading the Profile', error)
       } else {
         this.setProfile(profile)
-        return this.dispatch(loginSuccess(profile))
+        this.emit('authorization_complete', profile)
+        // if (this.dispatch) {
+        //   return this.dispatch(loginSuccess(profile))  
+        // }
       }
     })
   }
@@ -69,6 +86,7 @@ export default class AuthService extends EventEmitter {
     // debugger
     // return dispatch => {
       this.lock.show()
+      return false
     // }
     
   }
@@ -156,3 +174,5 @@ export default class AuthService extends EventEmitter {
     .then(response => response.json())
   }
 }
+
+// export default connect(mapStateToProps, mapDispatchToProps)(App)

@@ -1,10 +1,11 @@
 import React, { PropTypes as T } from 'react'
 import {Button} from 'react-bootstrap'
-import AuthService from '../../utils/AuthService'
+// import AuthService from '../../utils/AuthService'
 import Messages from '../../components/Messages/Messages'
 import ProfileDetails from '../../components/Profile/ProfileDetails'
 import ProfileEdit from '../../components/Profile/ProfileEdit'
 import styles from './styles.module.css'
+import AuthService, {logoutSuccess} from '../../utils/AuthService'
 
 export class Home extends React.Component {
   static contextTypes = {
@@ -27,6 +28,7 @@ export class Home extends React.Component {
 
   logout(){
     this.props.auth.logout()
+    this.props.dispatch(logoutSuccess(this.state.profile))
     this.context.router.push('/login');
   }
 

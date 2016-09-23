@@ -24,7 +24,7 @@ module.exports = {
   // https://github.com/facebookincubator/create-react-app/issues/343#issuecomment-237241875
   // You may want 'cheap-module-source-map' instead if you prefer source maps.
   // devtool: 'eval',
-  devtool: 'source-map',
+  devtool: 'module-source-map',
   // These are the "entry points" to our application.
   // This means they will be the "root" imports that are included in JS bundle.
   // The first two entry points enable "hot" CSS and auto-refreshes for JS.
@@ -38,13 +38,13 @@ module.exports = {
     // route like /todos/42 would make it wrongly request /todos/42/sockjs-node.
     // The socket server is a part of WebpackDevServer which we are using.
     // The /sockjs-node/ path I'm referring to is hardcoded in WebpackDevServer.
-    // require.resolve('webpack-dev-server/client') + '?/',
+    require.resolve('webpack-dev-server/client') + '?/',
 
     // Include Webpack hot module replacement runtime. Webpack is pretty
     // low-level so we need to put all the pieces together. The runtime listens
     // to the events received by the client above, and applies updates (such as
     // new CSS) to the running application.
-    // require.resolve('webpack/hot/dev-server'),
+    require.resolve('webpack/hot/dev-server'),
     
     // We ship a few polyfills by default.
     require.resolve('./polyfills'),

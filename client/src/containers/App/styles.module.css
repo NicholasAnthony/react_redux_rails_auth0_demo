@@ -11,11 +11,12 @@
   -o-box-orient: horizontal;
 
   flex-direction: column;
-
+  
+  
   @media (--screen-phone-lg) {
     flex-direction: row;
   }
-
+  
 }
 
 .content {
@@ -38,4 +39,5 @@
 
 .header {
   padding: 20px 0;
+  background: #999;
 }

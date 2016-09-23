@@ -1,9 +1,9 @@
 import React, { Component, PropTypes as PT } from 'react'
 
 export default class Auth extends Component {
-  // constructor(props) {
-  //   super(props)
-  // }
+  constructor(props) {
+    super(props)
+  }
 
   static PropTypes = {
     isAuthenticated: PT.bool,
