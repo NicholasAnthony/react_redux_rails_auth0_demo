@@ -56,7 +56,10 @@ export default class Calendar extends Component {
             </div>
           )
         ) : (
-          <img src="http://www.bba-reman.com/images/fbloader.gif" role="presentation" />
+          <div>
+            <img src="http://www.bba-reman.com/images/fbloader.gif" alt="logo" />
+            <span>Loading Events..</span>
+          </div>
         )}
       </div>
     )

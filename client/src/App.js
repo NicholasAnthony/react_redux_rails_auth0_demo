@@ -13,12 +13,15 @@ import './assets/jquery-ui-1.12.1-dark/jquery-ui.theme.css'
 import 'fullcalendar/dist/fullcalendar.min.css'
 import 'fullcalendar/dist/fullcalendar.min.js'
 import injectTapEventPlugin from 'react-tap-event-plugin';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+
 // import './utils/eventfulAPI'
 
 const store = configureStore
 const history = syncHistoryWithStore(browserHistory, store)
 
 render(
-  <Root store={store} history={history} />,
-  document.getElementById('root')
+  <MuiThemeProvider>
+    <Root store={store} history={history} />, document.getElementById('root')
+  </MuiThemeProvider>
 )
