@@ -24,7 +24,7 @@ export default class extends Component {
         <Navbar.Header>
           <Navbar.Brand>
             {/*<a href="#" className="logo-text">eventvs</a>*/}
-            <img src={LogoImg} role="presentation" />
+            <img src={LogoImg} alt="logo" />
           </Navbar.Brand>
           <Navbar.Toggle />
         </Navbar.Header>
@@ -55,7 +55,7 @@ export default class extends Component {
               <NavItem eventKey={4}>
                 <img src={profile.picture} 
                   height="40px" 
-                  role="presentation" 
+                  alt="profile" 
                   style={imgStyle} />
               </NavItem>
 
