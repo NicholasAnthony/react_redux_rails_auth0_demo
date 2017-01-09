@@ -11,9 +11,7 @@ function configureStore(preloadedState) {
     preloadedState,
     compose(
       applyMiddleware(thunk, eventsAPI, createLogger()),
-      // DevTools.instrument()
       window.devToolsExtension ? window.devToolsExtension() : DevTools.instrument()
-      // window.devToolsExtension ? window.devToolsExtension() : f => f
     )
   )
 

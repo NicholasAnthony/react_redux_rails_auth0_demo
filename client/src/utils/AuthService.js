@@ -3,31 +3,6 @@ import { isTokenExpired } from './jwtHelper'
 import Auth0Lock from 'auth0-lock'
 import configureStore from '../store/configureStore'
 
-
-// export const LOGIN_SUCCESS = 'LOGIN_SUCCESS'
-// export const LOGIN_ERROR = 'LOGIN_ERROR'
-// export const LOGOUT_SUCCESS = 'LOGOUT_SUCCESS'
-
-// export function loginSuccess(profile) {
-//   return {
-//     type: LOGIN_SUCCESS,
-//     profile
-//   }
-// }
-
-// export function loginError(error) {
-//   return {
-//     type: LOGIN_ERROR,
-//     error
-//   }
-// }
-
-// export function logoutSuccess(profile) {
-//   return {
-//     type: LOGOUT_SUCCESS
-//   }
-// }
-
 export default class AuthService extends EventEmitter {
   constructor(clientId, domain, app = null ) {
     super()

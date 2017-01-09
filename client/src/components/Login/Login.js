@@ -10,15 +10,10 @@ export class Login extends Component {
     super(props, context)
   }
 
-  // static contextTypes = {
-  //   router: T.object
-  // }
-
   static propTypes = {
     location: T.object,
     auth: T.instanceOf(AuthService)
   }
-
 
   render() {
     const { auth, dispatch } = this.props

@@ -17,7 +17,6 @@ export default class Root extends Component {
       <Provider store={store}>
         <Grid style={{fontFamily: "Open Sans", marginLeft: "0px", marginRight: "0px"}}>
           <Router history={history} routes={routes} />
-          {/*<DevTools />*/}
           {!window.devToolsExtension ? <DevTools /> : null}
         </Grid>
       </Provider>

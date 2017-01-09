@@ -1,8 +1,7 @@
 import React, { Component, PropTypes as T } from 'react'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
-import {loadEvent, loadEvents, loginSuccess, loginError, logoutSuccess} from '../../actions'
-import Calendar from '../../components/Calendar/Calendar'
+import {loginSuccess, loginError, logoutSuccess} from '../../actions'
 import Navbar from '../../components/Navbar/Navbar'
 import styles from './styles.module.css'
 
@@ -20,7 +19,6 @@ class App extends Component {
     })
     this.handleLoginClick = this.handleLoginClick.bind(this)
     this.handleLogoutClick = this.handleLogoutClick.bind(this)
-    this.handleGetEventsClick = this.handleGetEventsClick.bind(this)
   }
 
   handleLoginClick() {
@@ -31,10 +29,6 @@ class App extends Component {
     this.props.route.auth.logout()
     this.props.logoutSuccess(this.props.profile)
     this.context.router.push('/login');
-  }
-
-  handleGetEventsClick() {
-    this.props.loadEvents()
   }
 
   render() {
@@ -49,9 +43,6 @@ class App extends Component {
     }
     
     const { 
-      events,
-      singleEvent,
-      errorEvents,
       isAuthenticated, 
       profile } = this.props
 
@@ -66,23 +57,15 @@ class App extends Component {
             />
         </header>
         {children}
-        <div onClick={this.handleGetEventsClick}>Load Events</div>
-        <h4>Found {events.allEvents.length} Events:</h4>
-        <Calendar events={events.allEvents} />
       </div>
     )
   }
 }
 
 function mapStateToProps(state) {
-  const { events, event, auth } = state
-  const { errorEvents } = events
-  const { singleEvent } = event
+  const { auth } = state
   const { isAuthenticated, profile } = auth
   return {
-    events,
-    singleEvent,
-    errorEvents,
     isAuthenticated,
     profile
   }
@@ -91,9 +74,7 @@ function mapStateToProps(state) {
 
 
 const mapDispatchToProps = (dispatch, ownProps) => {
-  return bindActionCreators({ 
-    loadEvents,
-    loadEvent,
+  return bindActionCreators({
     loginSuccess,
     loginError,
     logoutSuccess,

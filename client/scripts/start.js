@@ -1,6 +1,3 @@
-console.log(" 🔔 <start.js> STARTJS:");
-process.env.NODE_ENV = 'development';
-
 var path = require('path');
 var chalk = require('chalk');
 var webpack = require('webpack');

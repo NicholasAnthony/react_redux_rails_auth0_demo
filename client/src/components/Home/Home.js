@@ -35,7 +35,7 @@ export class Home extends React.Component {
           <hr/>
           <Button block onClick={this.props.onLogoutClick}>Logout</Button>
         </Col>
-        <Col xs={6}>
+        <Col xs={9}>
           <h2>Welcome back, {profile.name}!</h2>
           <hr/>
           <ProfileDetails profile={profile}></ProfileDetails>

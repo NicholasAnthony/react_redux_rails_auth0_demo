@@ -35,14 +35,14 @@ export const EVENTS_REQUEST = 'EVENTS_REQUEST'
 export const EVENTS_SUCCESS = 'EVENTS_SUCCESS'
 export const EVENTS_FAILURE = 'EVENTS_FAILURE'
 
-function fetchEvents() {
+function fetchEvents(location = "New York City", keywords = "music") {
   return {
     // This gets sent to the eventsAPI default method
     // callAPI simply represents a symbol in memory
     [CALL_EVENTS_API]: {
       types: [ EVENTS_REQUEST, EVENTS_SUCCESS, EVENTS_FAILURE ],
-      endpoint: 'events.json',
-      authenticatedRequest: false
+      endpoint: `api/events?location=${location}&keywords=${keywords}`,
+      authenticatedRequest: true
     }
   }
 }

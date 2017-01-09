@@ -3,6 +3,18 @@ class PingsController < ApplicationController
 
   before_action :set_ping, only: [:show, :update, :destroy]
 
+
+  # def events
+  #   # These code snippets use an open-source library.
+  #   # response = Unirest.get "https://community-eventful.p.mashape.com/events/search?format=json&app_key=pVVv2HHk3W3LtLkP&keywords=comedy",
+  #   #   headers:{
+  #   #     "X-Mashape-Key" => "aexCNLFVhKmshtfkHd0xZtCTSTn5p1AmJ3tjsnSh2ZCtkhDx0q",
+  #   #     "Accept" => "application/json"
+  #   #   }
+  #   # p response
+  #   # render plain: response
+  # end
+
   def public
     render json: {message: "Hello from a PUBLIC endpoint!" }
   end
