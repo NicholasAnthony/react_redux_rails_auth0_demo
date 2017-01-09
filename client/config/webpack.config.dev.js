@@ -1,4 +1,3 @@
-console.log(" 🔔 <webpack.config.dev.js>:");
 var path = require('path');
 var autoprefixer = require('autoprefixer');
 var webpack = require('webpack');
@@ -204,4 +203,3 @@ module.exports = {
     new WatchMissingNodeModulesPlugin(paths.appNodeModules)
   ]
 };
-console.log(" 🔔 <webpack.config.dev.js> END:");

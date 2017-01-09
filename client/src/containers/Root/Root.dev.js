@@ -15,7 +15,7 @@ export default class Root extends Component {
     const { store, history } = this.props
     return (
       <Provider store={store}>
-        <Grid style={{fontFamily: "Open Sans"}}>
+        <Grid style={{fontFamily: "Open Sans", marginLeft: "0px", marginRight: "0px"}}>
           <Router history={history} routes={routes} />
           {/*<DevTools />*/}
           {!window.devToolsExtension ? <DevTools /> : null}

@@ -49,65 +49,9 @@ function auth(state = {
     }
 }
 
-// function jedis(state = {
-//   isFetching: false,
-//   allJedis: [],
-//   error: ''
-// }, action) {
-//   switch (action.type) {
-//     case ActionTypes.JEDIS_REQUEST:
-//       return Object.assign({}, state, {
-//         isFetching: true
-//       })
-//     case ActionTypes.JEDIS_SUCCESS:
-//       return Object.assign({}, state, {
-//         isFetching: false,
-//         allJedis: action.response,
-//         error: ''
-//       })
-//     case ActionTypes.JEDIS_FAILURE:
-//       return Object.assign({}, state, {
-//         isFetching: false,
-//         allJedis: [],
-//         error: action.error
-//       })
-//     default:
-//       return state
-//   }
-// }
-
-// function jedi(state = {
-//   isFetching: false,
-//   singleJedi: {},
-//   error: ''
-// }, action) {
-//   switch (action.type) {
-//     case ActionTypes.JEDI_REQUEST:
-//       return Object.assign({}, state, {
-//         isFetching: true
-//       })
-//     case ActionTypes.JEDI_SUCCESS:
-//       return Object.assign({}, state, {
-//         isFetching: false,
-//         singleJedi: action.response,
-//         error: ''
-//       })
-//     case ActionTypes.JEDI_FAILURE:
-//       return Object.assign({}, state, {
-//         isFetching: false,
-//         singleJedi: {},
-//         error: action.error
-//       })
-//     default:
-//       return state
-//   }
-// }
-
 const rootReducer = combineReducers({
   routing,
   auth,
-  // jedis,
-  // jedi,
   event,
   events
 })

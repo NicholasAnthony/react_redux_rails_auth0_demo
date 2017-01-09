@@ -3,7 +3,6 @@ import {ButtonToolbar, Button} from 'react-bootstrap'
 
 export default class extends Component {
   render() {
-    console.log(" 🔔 containers/EventsContainer/EventsContainer.js PROPS: ", this.props)
     return (
       <div>
         <h1>Events Container</h1>

@@ -9,13 +9,11 @@ export default connect((state) => {
       auth: state.auth,
     }
   }, (dispatch, ownProps) => {
-    debugger;
     return {
 
       doConsole: (v) => console.log(v),
 
       authLogin: () => {
-        debugger
         ownProps.auth.login()
         // const authLockLogin = new Promise((resolve, reject) => ownProps.auth.login())
         // return authLockLogin.then((profile) => {

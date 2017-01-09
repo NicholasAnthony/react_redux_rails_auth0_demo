@@ -3,8 +3,6 @@ export const API_ROOT = 'http://localhost:3002/'
 // This gets called second
 function callApi(endpoint, authenticatedRequest) {
 
-  debugger
-  
   let token = localStorage.getItem('id_token') || null
   let config = {}
   
@@ -42,7 +40,7 @@ export const CALL_EVENTS_API = Symbol('Call Events API')
 export default store => next => action => {
   
   const callAPI = action[CALL_EVENTS_API]
-  debugger
+
   if (typeof callAPI === 'undefined') {
     return next(action)
   }

@@ -16,7 +16,6 @@ const auth = new AuthService(
 
 // // onEnter callback to validate authentication in private routes
 const requireAuth = (nextState, replace) => {
-  // debugger
   if (!auth.loggedIn()) {
     replace({ pathname: '/login' })
   }
@@ -37,32 +36,3 @@ export default (
     {/*<Route path="auth" component={withRouter(EventsConnector(EventsContainer))} />*/}
   </Route>
 )
-
-
-
-
-
-
-// OLD
-// export default makeMainRoutes
-// import React from 'react'
-// import { Route } from 'react-router'
-// import App from './containers/App/App'
-// export default (
-//   <Route path="/" component={App}></Route>
-// )
-
-
-// import React from 'react'
-// // import {browserHistory, Router, Route, Redirect} from 'react-router'
-// import {Route} from 'react-router'
-// import makeMainRoutes from './views/Main/routes'
-// export const makeRoutes = () => {
-//   const main = makeMainRoutes();
-//   return (
-//     <Route path=''>
-//       {main}
-//     </Route>
-//   )
-// }
-// export default makeRoutes

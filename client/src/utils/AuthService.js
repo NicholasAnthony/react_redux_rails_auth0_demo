@@ -54,7 +54,6 @@ export default class AuthService extends EventEmitter {
   }
 
   _doAuthentication(authResult){
-    // debugger
     // Saves the user token
     this.setToken(authResult.idToken)
     // Async loads the user profile data
@@ -79,7 +78,6 @@ export default class AuthService extends EventEmitter {
 
   login() {
     // Call the show method to display the widget.
-    // debugger
     // return dispatch => {
       this.lock.show()
       return false
@@ -88,14 +86,12 @@ export default class AuthService extends EventEmitter {
   }
 
   loggedIn(){
-    // debugger
     // Checks if there is a saved token and it's still valid
     const token = this.getToken()
     return !!token && !isTokenExpired(token)
   }
 
   setProfile(profile){
-    // debugger
     // Saves profile data to localStorage
     localStorage.setItem('profile', JSON.stringify(profile))
     // Triggers profile_updated event to update the UI
@@ -103,7 +99,6 @@ export default class AuthService extends EventEmitter {
   }
 
   getProfile(){
-    // debugger
     // Retrieves the profile data from localStorage
     const profile = localStorage.getItem('profile')
     return profile ? JSON.parse(localStorage.profile) : {}
@@ -115,9 +110,8 @@ export default class AuthService extends EventEmitter {
       'Content-Type': 'application/json',
       'Authorization': 'Bearer ' + this.getToken()
     }
-    debugger
+
     return fetch(`https://${process.env.REACT_APP_AUTH0_DOMAIN}/api/v2/users/${userId}`, {
-    // return fetch(`https://localhost:3002/api/v2/users/${userId}`, {
       method: 'PATCH',
       headers: headers,
       body: JSON.stringify(data)

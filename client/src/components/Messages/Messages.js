@@ -32,10 +32,6 @@ export class Messages extends React.Component {
   }
 
   render(){
-    // if (this.state.events) { debugger }
-    // console.log("STATE: ", this.state)
-    // console.log("----")
-
     return (
       <div>
         <h3>Messages</h3>
@@ -55,15 +51,3 @@ export class Messages extends React.Component {
 }
 
 export default Messages;
-
-
-// {this.state.events && this.state.events.map((event, i) =>
-//   <ListGroupItem key={i} header={event.title}>
-//   {event.start_time}
-//   {
-//     event.image && event.image.small && 
-//     <img src={event.image.small.url} role="presentation" />
-//   }
-    
-//   </ListGroupItem>
-// )}

@@ -12,7 +12,6 @@ export default class Auth extends Component {
   }
 
   render() {
-    debugger
     const { onLoginClick, onLogoutClick, isAuthenticated, profile } = this.props
     return (
       <div style={{ marginTop: '10px' }}>

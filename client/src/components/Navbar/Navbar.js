@@ -19,7 +19,7 @@ export default class extends Component {
     const { onLoginClick, onLogoutClick, isAuthenticated, profile } = this.props
     const imgStyle = {position: "absolute", marginLeft: "-30px", marginTop: "-10px"}
     return (
-      <Navbar fixedTop>
+      <Navbar fixedTop fluid>
         <Navbar.Header>
           <Navbar.Brand>
             {/*<a href="#" className="logo-text">eventvs</a>*/}
