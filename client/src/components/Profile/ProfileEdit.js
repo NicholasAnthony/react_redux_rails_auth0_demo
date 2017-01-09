@@ -13,6 +13,7 @@ export class ProfileEdit extends Component {
   handleSubmit(e){
     e.preventDefault()
     const { profile, auth } = this.props
+    // debugger
     auth.updateProfile(profile.user_id, {
       user_metadata: {
         address: ReactDOM.findDOMNode(this.refs.address).value

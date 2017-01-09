@@ -42,8 +42,9 @@ export default class AuthService extends EventEmitter {
         // sso: true
       }
     }
+    
     this.lock = new Auth0Lock(clientId, domain, authOptions)
-
+    
     // Add callback for lock `authenticated` event
     this.lock.on('authenticated', this._doAuthentication.bind(this))
     // Add callback for lock `authorization_error` event
@@ -114,7 +115,9 @@ export default class AuthService extends EventEmitter {
       'Content-Type': 'application/json',
       'Authorization': 'Bearer ' + this.getToken()
     }
-    return fetch(`https://${this.domain}/api/v2/users/${userId}`, {
+    debugger
+    return fetch(`https://${process.env.REACT_APP_AUTH0_DOMAIN}/api/v2/users/${userId}`, {
+    // return fetch(`https://localhost:3002/api/v2/users/${userId}`, {
       method: 'PATCH',
       headers: headers,
       body: JSON.stringify(data)

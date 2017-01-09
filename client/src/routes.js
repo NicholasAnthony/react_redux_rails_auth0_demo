@@ -16,6 +16,7 @@ const auth = new AuthService(
 
 // // onEnter callback to validate authentication in private routes
 const requireAuth = (nextState, replace) => {
+  // debugger
   if (!auth.loggedIn()) {
     replace({ pathname: '/login' })
   }
