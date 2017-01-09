@@ -1,4 +1,5 @@
-import * as ActionTypes from '../actions/event_actions'
+// import * as ActionTypes from '../actions/event_actions'
+import * as ActionTypes from '../actions'
 // import { routerReducer as routing } from 'react-router-redux'
 // import { combineReducers } from 'redux'
 import R from 'ramda'
@@ -30,12 +31,15 @@ const eventsMeta = (response) => {
 
 
 export function events(state = intialEventsState, action) {
+  let anAction = action
+  debugger
   switch (action.type) {
     case ActionTypes.EVENTS_REQUEST:
       return Object.assign({}, state, {
         isFetching: true
       })
     case ActionTypes.EVENTS_SUCCESS:
+      debugger
       return Object.assign({}, state, {
         ...eventsMeta(action.response),
         isFetching: false,

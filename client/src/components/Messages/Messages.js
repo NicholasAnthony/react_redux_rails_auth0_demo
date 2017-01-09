@@ -20,12 +20,12 @@ export class Messages extends React.Component {
     const { auth } = this.props
 
     // public http request
-    fetch('http://localhost:3001/api/public')
+    fetch('http://localhost:3002/api/public')
       .then(response => response.json())
       .then(response => this.setState({publicMsg: response.message}))
     
     // using auth to send an http request with authorization header
-    auth.fetch('http://localhost:3001/api/private')
+    auth.fetch('http://localhost:3002/api/private')
       .then(response => this.setState({privateMsg: response.message}))
       .catch(error => this.setState({privateMsg: "" + error}))
 

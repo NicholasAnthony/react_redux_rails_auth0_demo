@@ -9,8 +9,9 @@ export default connect((state) => {
       auth: state.auth,
     }
   }, (dispatch, ownProps) => {
-
+    debugger;
     return {
+
       doConsole: (v) => console.log(v),
 
       authLogin: () => {

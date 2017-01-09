@@ -29,6 +29,7 @@ class App extends Component {
     })
     this.handleLoginClick = this.handleLoginClick.bind(this)
     this.handleLogoutClick = this.handleLogoutClick.bind(this)
+    this.handleGetEventsClick = this.handleGetEventsClick.bind(this)
   }
 
   handleLoginClick() {
@@ -39,6 +40,10 @@ class App extends Component {
     this.props.route.auth.logout()
     this.props.logoutSuccess(this.props.profile)
     this.context.router.push('/login');
+  }
+
+  handleGetEventsClick() {
+    this.props.loadEvents()
   }
 
   render() {
@@ -52,6 +57,7 @@ class App extends Component {
       })
     }
     
+    // debugger
     // their stuf
     const { 
       // allJedis, 
@@ -75,6 +81,9 @@ class App extends Component {
             />
         </header>
         {children}
+        <div onClick={this.handleGetEventsClick}>Load Events</div>
+        <h4>Found {events.allEvents.length} Events:</h4>
+        <Calendar events={events.allEvents} />
       </div>
     )
   }
@@ -87,6 +96,7 @@ function mapStateToProps(state) {
   const { /*allEvents,*/ errorEvents } = events
   const { singleEvent } = event
   const { isAuthenticated, profile } = auth
+  // debugger
   return {
     // allJedis,
     // singleJedi,
@@ -103,6 +113,7 @@ function mapStateToProps(state) {
 
 
 const mapDispatchToProps = (dispatch, ownProps) => {
+  // debugger
   return bindActionCreators({ 
     loadEvents,
     loadEvent,

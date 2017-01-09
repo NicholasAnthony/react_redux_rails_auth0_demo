@@ -1,8 +1,8 @@
 // import { CALL_API } from '../utils/middleware/eventsAPI'
 
-// export const EVENTS_REQUEST = 'EVENTS_REQUEST'
-// export const EVENTS_SUCCESS = 'EVENTS_SUCCESS'
-// export const EVENTS_FAILURE = 'EVENTS_FAILURE'
+export const EVENTS_REQUEST = 'EVENTS_REQUEST'
+export const EVENTS_SUCCESS = 'EVENTS_SUCCESS'
+export const EVENTS_FAILURE = 'EVENTS_FAILURE'
 
 // function fetchEvents() {
 //   return {
