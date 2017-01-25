@@ -5,7 +5,7 @@ class EventsController < ApplicationController
     eventful = Eventful::API.new "pVVv2HHk3W3LtLkP", root: '/json/'
     keywords = params[:keywords]
     location = params[:location]
-    results = eventful.call 'events/search', :keywords => keywords, :location => location, :page_size => 100
+    results = eventful.call 'events/search', :keywords => keywords, :location => location, :page_size => 10
     render json: results
   end
 end

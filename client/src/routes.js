@@ -4,6 +4,7 @@ import AuthService from './utils/AuthService'
 import App from './containers/App/App'
 import Home from './components/Home/Home'
 import Login from './components/Login/Login'
+import SubPage from './components/SubPage/SubPage'
 import EventsConnector from './connectors/EventsConnector/EventsConnector'
 import EventsContainer from './containers/EventsContainer/EventsContainer'
 
@@ -27,9 +28,10 @@ const authRedirect = (nextState, replace) => {
 export default (
   <Route path="/" component={App} auth={auth} >
     <IndexRedirect to="/home" />
-    <Route path="home" component={Home} onEnter={requireAuth} />
-    <Route path="login" component={Login} onEnter={authRedirect} />
+    <Route path="home" name="Profile" component={Home} onEnter={requireAuth} />
+    <Route path="login" name="Login" component={Login} onEnter={authRedirect} />
     <Route path="access_token=:token" component={Login} /> //to prevent router errors
-    <Route path="events" component={withRouter(EventsConnector(EventsContainer))} />
+    <Route path="events" name="Events" component={withRouter(EventsConnector(EventsContainer))} />
+    <Route path="subpage" name="Sub Page" component={SubPage} onEnter={requireAuth} />
   </Route>
 )

@@ -160,7 +160,17 @@ module.exports = {
         query: {
           attrs: ['link:href'],
         }
+      },
+      // "scss" loader for loading grommet
+      {
+       test: /\.scss$/,
+       loader: 'style!css!sass?outputStyle=compressed'
       }
+    ]
+  },
+  sassLoader: {
+    includePaths: [
+      './node_modules'
     ]
   },
   // Point ESLint to our predefined config.

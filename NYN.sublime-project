@@ -1,0 +1,12 @@
+{
+  "settings":
+  {
+    "color_scheme": "Packages/Babel/Monokai Phoenix.tmTheme"
+  },
+	"folders":
+	[
+		{
+			"path": "client"
+		}
+	]
+}

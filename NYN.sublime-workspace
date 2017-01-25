@@ -1,0 +1,1316 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"on",
+				"onSubmit"
+			],
+			[
+				"cl",
+				"className"
+			],
+			[
+				"Ap",
+				"AppHeader"
+			],
+			[
+				"split",
+				"splitSwitch"
+			],
+			[
+				"pr",
+				"priority"
+			],
+			[
+				"App",
+				"AppSidebar"
+			],
+			[
+				"Se",
+				"Section1"
+			],
+			[
+				"Sub",
+				"SubPage"
+			],
+			[
+				"key",
+				"keywordInput"
+			],
+			[
+				"location",
+				"locationInput"
+			],
+			[
+				"event",
+				"eventURL"
+			],
+			[
+				"logout",
+				"logoutSuccess"
+			],
+			[
+				"ha",
+				"handleLoadEvents"
+			],
+			[
+				"csv",
+				"csv_read_opts"
+			],
+			[
+				"slc",
+				"slcsps"
+			],
+			[
+				"sl",
+				"slcsps"
+			],
+			[
+				"read",
+				"read_csv"
+			],
+			[
+				"plan",
+				"plan_hash"
+			],
+			[
+				"plan_r",
+				"plan_rate_area"
+			],
+			[
+				"rate",
+				"rate_areas"
+			],
+			[
+				"found",
+				"found_slcsp"
+			],
+			[
+				"row",
+				"row_hash"
+			],
+			[
+				"it",
+				"iterator"
+			],
+			[
+				"type",
+				"typeof"
+			],
+			[
+				"scop",
+				"scopeSplit"
+			],
+			[
+				"get",
+				"getFunctionFromString"
+			],
+			[
+				"item",
+				"itemWithReviews"
+			],
+			[
+				"res",
+				"resultStr"
+			],
+			[
+				"build",
+				"buildJSON"
+			],
+			[
+				"proce",
+				"processedMsg"
+			],
+			[
+				"msg",
+				"msgItem"
+			],
+			[
+				"map",
+				"mapSeries"
+			],
+			[
+				"venu",
+				"venueItem"
+			],
+			[
+				"venue",
+				"venueItem"
+			],
+			[
+				"veue",
+				"venueItems"
+			],
+			[
+				"msgi",
+				"msgItemId"
+			],
+			[
+				"msgI",
+				"msgItemId"
+			],
+			[
+				"vneu",
+				"venueItem"
+			],
+			[
+				"the",
+				"theJSON"
+			],
+			[
+				"mark",
+				"markdown"
+			],
+			[
+				"re",
+				"reviewResult"
+			],
+			[
+				"ve",
+				"venueItem"
+			],
+			[
+				"ven",
+				"venueItem"
+			],
+			[
+				"fetch",
+				"fetchVenueItem"
+			],
+			[
+				"fetc",
+				"fetchVenueItem"
+			],
+			[
+				"pro",
+				"processedMsg"
+			],
+			[
+				"proc",
+				"processedMsg"
+			],
+			[
+				"MESSGE",
+				"message"
+			],
+			[
+				"vne",
+				"venueItem"
+			],
+			[
+				"url",
+				"urlStr"
+			],
+			[
+				"for",
+				"for\tfor (…) {…}"
+			],
+			[
+				"curl",
+				"curlrequest"
+			],
+			[
+				"veu",
+				"venueItems"
+			],
+			[
+				"contne",
+				"contentParam"
+			],
+			[
+				"cur",
+				"curlRequest"
+			],
+			[
+				"mess",
+				"msgWithVeunes"
+			],
+			[
+				"add",
+				"addVenueItems"
+			],
+			[
+				"fo",
+				"for\tfor (…) {…}"
+			],
+			[
+				"let",
+				"let\tES6 Let"
+			],
+			[
+				"process",
+				"processItems"
+			],
+			[
+				"message",
+				"messageResult"
+			],
+			[
+				"dec",
+				"decoded"
+			],
+			[
+				"decom",
+				"decompressed"
+			],
+			[
+				"de",
+				"decode"
+			],
+			[
+				"review",
+				"reviewItem"
+			],
+			[
+				"Pro",
+				"Promise\tES6 Promise"
+			],
+			[
+				"error",
+				"errorMsg"
+			],
+			[
+				"M",
+				"messages"
+			],
+			[
+				"st",
+				"stdout"
+			],
+			[
+				"list",
+				"listItemId"
+			],
+			[
+				"JSON",
+				"JSONoptions"
+			],
+			[
+				"mss",
+				"messageMap"
+			],
+			[
+				"even",
+				"eventEmitter"
+			],
+			[
+				"le",
+				"length"
+			],
+			[
+				"decode",
+				"decodeComplete"
+			],
+			[
+				"urls",
+				"urlsProcessed"
+			],
+			[
+				"bye",
+				"byte_array"
+			],
+			[
+				"in",
+				"infatuation"
+			],
+			[
+				"to",
+				"toString"
+			],
+			[
+				"lz",
+				"lzmaString"
+			],
+			[
+				"bas",
+				"Base64String"
+			],
+			[
+				"content",
+				"contentParam"
+			],
+			[
+				"decompre",
+				"decompressed"
+			],
+			[
+				"listi",
+				"listItemIds"
+			],
+			[
+				"load",
+				"loadListItems"
+			],
+			[
+				"gene",
+				"generateTemplateOld"
+			],
+			[
+				"max-",
+				"max-width"
+			],
+			[
+				"se",
+				"setAttribute"
+			],
+			[
+				"json",
+				"jsonNode"
+			],
+			[
+				"app",
+				"appendChild"
+			],
+			[
+				"node",
+				"nodePRE"
+			],
+			[
+				"h2",
+				"h2Text"
+			],
+			[
+				"img",
+				"imgNode"
+			],
+			[
+				"buf",
+				"bufArray"
+			],
+			[
+				"proto",
+				"protobuf"
+			],
+			[
+				"lzm",
+				"lzmaNative"
+			],
+			[
+				"wire",
+				"wireType"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "client/_extra/grommet-api.md",
+			"settings":
+			{
+				"buffer_size": 4817,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "Menu"
+			}
+		},
+		{
+			"file": "client/src/components/Login/Login.js",
+			"settings":
+			{
+				"buffer_size": 1296,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/_extra/notes.txt",
+			"settings":
+			{
+				"buffer_size": 2288,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "src/app"
+			}
+		},
+		{
+			"file": "client/src/App.js",
+			"settings":
+			{
+				"buffer_size": 750,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/src/containers/App/App.js",
+			"settings":
+			{
+				"buffer_size": 4411,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/src/components/TopNav/TopNav.js",
+			"settings":
+			{
+				"buffer_size": 2620,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/src/containers/EventsContainer/EventsContainer.js",
+			"settings":
+			{
+				"buffer_size": 2141,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/src/components/TopNav/styles.module.css",
+			"settings":
+			{
+				"buffer_size": 38,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 87.0,
+		"last_filter": "install pac",
+		"selected_items":
+		[
+			[
+				"install pac",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"for",
+				"Snippet: for (…) {…}"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/nicholasanthony/Repos/react_redux_rails_auth0_demo/client",
+		"/Users/nicholasanthony/Repos/react_redux_rails_auth0_demo/client/src",
+		"/Users/nicholasanthony/Repos/react_redux_rails_auth0_demo/client/src/assets",
+		"/Users/nicholasanthony/Repos/react_redux_rails_auth0_demo/client/src/assets/images",
+		"/Users/nicholasanthony/Repos/react_redux_rails_auth0_demo/client/src/components",
+		"/Users/nicholasanthony/Repos/react_redux_rails_auth0_demo/client/src/components/TopNav"
+	],
+	"file_history":
+	[
+		"/Users/nicholasanthony/Repos/react_redux_rails_auth0_demo/client/src/components/Messages/Messages.js",
+		"/Users/nicholasanthony/Repos/react_redux_rails_auth0_demo/client/src/components/Home/Home.js",
+		"/Users/nicholasanthony/Repos/react_redux_rails_auth0_demo/client/src/components/AppSidebar/AppSidebar.js",
+		"/Users/nicholasanthony/Repos/react_redux_rails_auth0_demo/client/src/components/SubPage/Cards.js",
+		"/Users/nicholasanthony/Repos/react_redux_rails_auth0_demo/client/src/components/SubPage/Header.js",
+		"/Users/nicholasanthony/Repos/react_redux_rails_auth0_demo/client/src/components/AppHeader/AppHeader.js",
+		"/Users/nicholasanthony/Repos/react_redux_rails_auth0_demo/client/src/components/SubPage/SubPage.js",
+		"/Users/nicholasanthony/Repos/react_redux_rails_auth0_demo/client/src/components/Common.js",
+		"/Users/nicholasanthony/Repos/react_redux_rails_auth0_demo/client/src/components/Navbar/Navbar.js",
+		"/Users/nicholasanthony/Repos/react_redux_rails_auth0_demo/client/config/webpack.config.dev.js",
+		"/Users/nicholasanthony/.zshrc",
+		"/Users/nicholasanthony/Repos/react_redux_rails_auth0_demo/NYN.sublime-project",
+		"/Users/nicholasanthony/Repos/react_redux_rails_auth0_demo/client/src/components/Sidebar/Sidebar.js",
+		"/Users/nicholasanthony/Repos/react_redux_rails_auth0_demo/client/src/routes.js",
+		"/Users/nicholasanthony/Repos/react_redux_rails_auth0_demo/client/index.html",
+		"/Users/nicholasanthony/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/nicholasanthony/Repos/react_redux_rails_auth0_demo/client/src/containers/Root/Root.dev.js",
+		"/Users/nicholasanthony/Repos/react_redux_rails_auth0_demo/client/src/components/Calendar/Calendar-bak.js",
+		"/Users/nicholasanthony/Repos/react_redux_rails_auth0_demo/client/src/components/Calendar/Calendar.js",
+		"/Users/nicholasanthony/Repos/react_redux_rails_auth0_demo/client/src/containers/EventsContainer/EventsContainer.js",
+		"/Users/nicholasanthony/Repos/react_redux_rails_auth0_demo/client/src/connectors/EventsConnector/EventsConnector.js",
+		"/Users/nicholasanthony/Repos/react_redux_rails_auth0_demo/client/src/components/AppLeftNav.js",
+		"/Users/nicholasanthony/Repos/react_redux_rails_auth0_demo/client/src/utils/middleware/eventsAPI.js",
+		"/Users/nicholasanthony/Repos/react_redux_rails_auth0_demo/client/src/reducers/eventReducer.js",
+		"/Users/nicholasanthony/Repos/react_redux_rails_auth0_demo/client/src/actions/index.js",
+		"/Users/nicholasanthony/Repos/react_redux_rails_auth0_demo/client/src/components/Header/Header.js",
+		"/Users/nicholasanthony/Repos/react_redux_rails_auth0_demo/client/src/assets/css/main.css",
+		"/Users/nicholasanthony/Repos/react_redux_rails_auth0_demo/client/src/components/AppLeftNav.jsx",
+		"/Users/nicholasanthony/Repos/react_redux_rails_auth0_demo/client/package.json",
+		"/Users/nicholasanthony/.npm-packages/lib/node_modules/salita/node_modules/json-file-plus/index.js",
+		"/Users/nicholasanthony/Repos/react_redux_rails_auth0_demo/client/src/assets/bootstrap-3.3.7/css/bootstrap.simplex.min.css",
+		"/Users/nicholasanthony/Repos/react_redux_rails_auth0_demo/.git/MERGE_MSG",
+		"/Users/nicholasanthony/Repos/react_redux_rails_auth0_demo/.git/COMMIT_EDITMSG",
+		"/Users/nicholasanthony/Repos/react_redux_rails_auth0_demo/client/src/assets/bootstrap.slate.min.css",
+		"/Users/nicholasanthony/Repos/react_redux_rails_auth0_demo/client/src/components/Profile/ProfileDetails.js",
+		"/Users/nicholasanthony/Repos/react_redux_rails_auth0_demo/client/src/reducers/index.js",
+		"/Users/nicholasanthony/Repos/react_redux_rails_auth0_demo/client/src/store/configureStore.dev.js",
+		"/Users/nicholasanthony/Repos/react_redux_rails_auth0_demo/client/src/utils/eventfulAPI.js",
+		"/Users/nicholasanthony/Repos/react_redux_rails_auth0_demo/client/.gitignore",
+		"/Users/nicholasanthony/Repos/react_redux_rails_auth0_demo/client/src/components/Login/Login.js",
+		"/Users/nicholasanthony/Repos/react_redux_rails_auth0_demo/client/src/components/Auth.js",
+		"/Users/nicholasanthony/Repos/react_redux_rails_auth0_demo/client/src/utils/AuthService.js",
+		"/Users/nicholasanthony/Repos/react_redux_rails_auth0_demo/client/scripts/start.js",
+		"/Users/nicholasanthony/Repos/react_redux_rails_auth0_demo/client/.env",
+		"/Users/nicholasanthony/Repos/react_redux_rails_auth0_demo/client/src/components/Profile/ProfileEdit.js",
+		"/Users/nicholasanthony/Repos/react_redux_rails_auth0_demo/client/src/actions/event_actions.js",
+		"/Users/nicholasanthony/Repos/react_redux_rails_auth0_demo/client/config/env.js",
+		"/Users/nicholasanthony/Repos/rubix/newdemo/sass/components/_sidebar.scss",
+		"/Users/nicholasanthony/Repos/rubix/newdemo/sass/fonts/fontello/fontello.css",
+		"/Users/nicholasanthony/Repos/rubix/newdemo/extra/rubix-inline.css",
+		"/Users/nicholasanthony/Repos/rubix/newdemo/package.json",
+		"/Users/nicholasanthony/Repos/homework/slcsp/parse.rb",
+		"/Users/nicholasanthony/Repos/homework/slcsp/slcsp-result.csv",
+		"/Users/nicholasanthony/Repos/homework/slcsp/plans2.csv",
+		"/Applications/MAMP/conf/apache/httpd.conf",
+		"/Applications/MAMP/conf/apache/extra/httpd-vhosts.conf",
+		"/Users/nicholasanthony/.ssh/config",
+		"/Users/nicholasanthony/Code/infatuation/README.MD",
+		"/Users/nicholasanthony/Code/infatuation/src/index.js",
+		"/Users/nicholasanthony/Code/infatuation/dist/index.js",
+		"/Users/nicholasanthony/Code/infatuation/package.json",
+		"/Users/nicholasanthony/Desktop/npm-remove.txt",
+		"/Users/nicholasanthony/Code/infatuation/index.js",
+		"/Users/nicholasanthony/Code/infatuation/extra/Notes.txt",
+		"/Users/nicholasanthony/Code/infatuation/extra/clip.js",
+		"/Users/nicholasanthony/Code/infatuation/index.new.js",
+		"/Users/nicholasanthony/Code/infatuation/data/urls.txt",
+		"/Users/nicholasanthony/Code/infatuation/clip.js",
+		"/Users/nicholasanthony/Code/infatuation/index-multiple.js",
+		"/Users/nicholasanthony/Code/infatuation/.babelrc",
+		"/Users/nicholasanthony/Code/infatuation/index.babel.js.bak.js",
+		"/Users/nicholasanthony/Code/infatuation/.gitignore",
+		"/Users/nicholasanthony/Code/infatuation/public/index.html",
+		"/Users/nicholasanthony/Code/infatuation/node_modules/lzma-native/index.js",
+		"/Users/nicholasanthony/Code/infatuation/index.js.bak",
+		"/Users/nicholasanthony/Code/infatuation/index2.js.bak.js",
+		"/Users/nicholasanthony/Code/infatuation/npm-debug.log",
+		"/Users/nicholasanthony/.bash_history",
+		"/Users/nicholasanthony/.bash_profile",
+		"/Users/nicholasanthony/.bashrc",
+		"/Users/nicholasanthony/Library/Application Support/Sublime Text 3/Packages/User/console-log.sublime-snippet",
+		"/Users/nicholasanthony/Library/Application Support/Sublime Text 3/Packages/User/console-start.sublime-snippet",
+		"/Users/nicholasanthony/Library/Application Support/Sublime Text 3/Packages/User/console-end.sublime-snippet",
+		"/Users/nicholasanthony/Code/infatuation/public/index-orig.html",
+		"/Users/nicholasanthony/Code/infatuation/app.js",
+		"/Users/nicholasanthony/Code/infatuation/node_modules/node-libcurl/src/Easy.cc",
+		"/Users/nicholasanthony/Code/infatuation/node_modules/node-libcurl/lib/Curl.js",
+		"/Users/nicholasanthony/Code/infatuation/public/js/handlebars.js",
+		"/Users/nicholasanthony/Code/infatuation/extra/extra.js",
+		"/Users/nicholasanthony/Code/infatuation/public/index-react.html",
+		"/Users/nicholasanthony/Code/infatuation/data/list.proto",
+		"/Users/nicholasanthony/Code/infatuation/data/timestamp.proto",
+		"/Users/nicholasanthony/Code/infatuation/Notes.txt",
+		"/Users/nicholasanthony/Code/infatuation/tests/complex.proto",
+		"/Users/nicholasanthony/Code/infatuation/extra.js",
+		"/Users/nicholasanthony/Code/rpc-ruby/Notes.txt",
+		"/Users/nicholasanthony/Repos/protobuf-js-0.0.0/data/list",
+		"/Users/nicholasanthony/Code/protobufjs/awesome.proto",
+		"/Users/nicholasanthony/Repos/proto-buffer-api/public/long.js",
+		"/Users/nicholasanthony/.profile",
+		"/Users/nicholasanthony/+40",
+		"/Users/nicholasanthony/.rvm/config/known",
+		"/Users/nicholasanthony/iTerm2colors.sh"
+	],
+	"find":
+	{
+		"height": 40.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Users/nicholasanthony/Repos/react_redux_rails_auth0_demo/client/src",
+			"",
+			"*.scss",
+			"",
+			"/Users/nicholasanthony/Repos/react_redux_rails_auth0_demo/client/",
+			"/Users/nicholasanthony/Repos/react_redux_rails_auth0_demo/client/src/components",
+			"client/src/*.js",
+			"client/src/*",
+			"client/src/",
+			"",
+			"client/src",
+			"src",
+			"*src",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"User",
+			"Edit",
+			"size=\"small\"",
+			" ",
+			"styles",
+			"import styles",
+			"modules.css",
+			"styles.modules.css",
+			"hasAuth",
+			"topnav",
+			"isAuth",
+			"isAuthenticated",
+			" ",
+			"That being said",
+			"Header",
+			"Box",
+			"Form",
+			"hasAuth",
+			"isAuthenticated",
+			"User",
+			"action",
+			"\":",
+			",",
+			"\":\"",
+			",",
+			":",
+			"profile",
+			"handle",
+			"Box",
+			"==",
+			"handleResponsiveUpdate",
+			"props",
+			"...",
+			"handleResponsiveUpdate",
+			"priority:",
+			"splitPriority",
+			"media",
+			"breakpoint",
+			"719",
+			"720",
+			"Sidebar",
+			"</Anchor>",
+			"Split",
+			"Header",
+			"assets/images/",
+			"background",
+			"backgroundImage",
+			"hero",
+			"left",
+			"center",
+			"TopNav",
+			"Box colorIndex",
+			"main.css",
+			"span",
+			"Navbar",
+			"';",
+			"darkbase",
+			";",
+			"store",
+			"zIndex",
+			"docked",
+			";",
+			"subheader",
+			"Typography",
+			"textFullWhite",
+			"SelectableList",
+			"SelectableContainerEnhance",
+			"appRoutes",
+			"getListItems",
+			"auto",
+			";",
+			"StylePropable",
+			"LeftNav>",
+			"<LeftNav",
+			"leftNav",
+			"LeftNav",
+			"material-ui/lib",
+			"style=",
+			"prepareStyles",
+			"githubButton",
+			"docked",
+			"Colors",
+			"tapevent",
+			"childContextTypes",
+			"this.state",
+			"customBa",
+			"},",
+			";",
+			"material-ui/lib/",
+			"material",
+			"react-router-redux",
+			"react-tap-event-plugin",
+			"react",
+			"nyn",
+			".map",
+			"MyCalendar",
+			"window",
+			"import ",
+			"<link href=\"",
+			"xs-6",
+			"col-xs-6",
+			"3.",
+			"eventvs",
+			"moment",
+			"input",
+			"logoutSuccess",
+			"import navbar",
+			"import button",
+			"authLogin",
+			"/auth",
+			"events container",
+			"document.getEle",
+			"DevTools",
+			"console.log",
+			"console.log(\" 🔔 <webpack.config.dev.js>:\");",
+			"console.log",
+			"h3",
+			"debugger",
+			"// debugger",
+			"debugger",
+			"queries",
+			"views",
+			"Jedi",
+			"/container",
+			"container",
+			"handleGetJedisClick",
+			"loginSuccess",
+			"configureStore"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 6,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "client/_extra/grommet-api.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4817,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1512,
+								1512
+							]
+						],
+						"settings":
+						{
+							"auto_name": "Menu",
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 582.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "client/src/components/Login/Login.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1296,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								228,
+								234
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "client/_extra/notes.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2288,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								879,
+								879
+							]
+						],
+						"settings":
+						{
+							"auto_name": "src/app",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "client/src/App.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 750,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								470,
+								470
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "client/src/containers/App/App.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4411,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "client/src/components/TopNav/TopNav.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2620,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1039,
+								1048
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "client/src/containers/EventsContainer/EventsContainer.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2141,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								723,
+								791
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 404.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "client/src/components/TopNav/styles.module.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 38,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5,
+								5
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 32.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "NYN.sublime-project",
+	"replace":
+	{
+		"height": 60.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"events",
+				"src/containers/EventsContainer/EventsContainer.js"
+			],
+			[
+				"mes",
+				"src/components/Messages/Messages.js"
+			],
+			[
+				"messages",
+				"src/components/Messages/Messages.js"
+			],
+			[
+				"topna",
+				"src/components/TopNav/TopNav.js"
+			],
+			[
+				"login",
+				"src/components/Login/Login.js"
+			],
+			[
+				"navbar",
+				"src/components/Navbar/Navbar.js"
+			],
+			[
+				"nav",
+				"src/components/Navbar/Navbar.js"
+			],
+			[
+				"routes",
+				"src/routes.js"
+			],
+			[
+				"home",
+				"src/components/Home/Home.js"
+			],
+			[
+				"navb",
+				"src/components/Navbar/Navbar.js"
+			],
+			[
+				"webpac",
+				"config/webpack.config.dev.js"
+			],
+			[
+				"appleft",
+				"src/components/AppLeftNav.js"
+			],
+			[
+				"applet",
+				"src/components/AppLeftNav.jsx"
+			],
+			[
+				"index",
+				"index.html"
+			],
+			[
+				"root.dev",
+				"src/containers/Root/Root.dev.js"
+			],
+			[
+				"pack",
+				"package.json"
+			],
+			[
+				"calend",
+				"src/components/Calendar/Calendar-bak.js"
+			],
+			[
+				"cal",
+				"src/components/Calendar/Calendar.js"
+			],
+			[
+				"inde",
+				"index.html"
+			],
+			[
+				"profile",
+				"src/components/Profile/ProfileDetails.js"
+			],
+			[
+				"eventre",
+				"src/reducers/eventReducer.js"
+			],
+			[
+				"index.js",
+				"src/actions/index.js"
+			],
+			[
+				"index.",
+				"index.html"
+			],
+			[
+				"eventap",
+				"src/utils/middleware/eventsAPI.js"
+			],
+			[
+				"giti",
+				".gitignore"
+			],
+			[
+				"eventscon",
+				"src/containers/EventsContainer/EventsContainer.js"
+			],
+			[
+				"auth",
+				"src/components/Auth.js"
+			],
+			[
+				"app.js",
+				"src/App.js"
+			],
+			[
+				"root",
+				"src/containers/Root/Root.dev.js"
+			],
+			[
+				".env",
+				".env"
+			],
+			[
+				"env",
+				"config/env.js"
+			],
+			[
+				"profilee",
+				"src/components/Profile/ProfileEdit.js"
+			],
+			[
+				"fonte",
+				"sass/fonts/fontello/fontello.css"
+			],
+			[
+				"find",
+				"find_rates.rb"
+			],
+			[
+				"par",
+				"parse.rb"
+			],
+			[
+				"babel",
+				".babelrc"
+			],
+			[
+				"clip",
+				"extra/clip.js"
+			],
+			[
+				"index-m",
+				"index-multiple.js"
+			],
+			[
+				"urls",
+				"data/urls.txt"
+			],
+			[
+				"index.ne",
+				"index.new.js"
+			],
+			[
+				"babelr",
+				".babelrc"
+			],
+			[
+				"babelrc",
+				".babelrc"
+			],
+			[
+				"notes",
+				"extra/Notes.txt"
+			],
+			[
+				".bak",
+				"index.js.bak"
+			],
+			[
+				"note",
+				"extra/Notes.txt"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 238.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

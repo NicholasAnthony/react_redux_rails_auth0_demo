@@ -29,22 +29,18 @@ export class Home extends React.Component {
   render(){
     const { profile } = this.state
     return (
-      <Row>
-        <Col xs={3}>
-          <Image src={profile.picture} thumbnail style={{width: "100%"}}/>
-          <hr/>
-          <Button block onClick={this.props.onLogoutClick}>Logout</Button>
-        </Col>
-        <Col xs={9}>
-          <h2>Welcome back, {profile.name}!</h2>
-          <hr/>
-          <ProfileDetails profile={profile}></ProfileDetails>
-          <hr/>
-          <ProfileEdit profile={profile} auth={this.props.auth}></ProfileEdit>
-          <hr/>
-          <Messages auth={this.props.auth}></Messages>
-        </Col>
-      </Row>
+      <div>
+        <img src={profile.picture} alt="This is your beautiful face" />
+        <hr/>
+        <Button block onClick={this.props.onLogoutClick}>Logout</Button>
+        <h2>Welcome back, {profile.name}!</h2>
+        <hr/>
+        <ProfileDetails profile={profile} />
+        <hr/>
+        <ProfileEdit profile={profile} auth={this.props.auth} />
+        <hr/>
+        <Messages auth={this.props.auth} />
+      </div>
     )
   }
 }
